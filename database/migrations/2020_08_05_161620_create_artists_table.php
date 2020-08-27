@@ -15,6 +15,10 @@ class CreateArtistsTable extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
+            $table->boolean('is_featured')->default(false);
+            $table->string('banner_url');
+            $table->string('genre');
             $table->timestamps();
         });
     }

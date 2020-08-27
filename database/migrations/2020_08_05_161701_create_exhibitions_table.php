@@ -15,6 +15,9 @@ class CreateExhibitionsTable extends Migration
     {
         Schema::create('exhibitions', function (Blueprint $table) {
             $table->id();
+            $table->string('slug');
+            $table->string('video_url')->nullable();
+            $table->string('image_url')->nullable();
             $table->timestamps();
         });
     }
