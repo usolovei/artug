@@ -15,7 +15,12 @@ class CreatePaintingTranslationsTable extends Migration
     {
         Schema::create('painting_translations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('title');
+            $table->text('short_desc')->nullable();
+            $table->text('description')->nullable();
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
         });
     }
 

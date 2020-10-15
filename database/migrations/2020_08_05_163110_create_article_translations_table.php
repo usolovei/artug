@@ -15,7 +15,14 @@ class CreateArticleTranslationsTable extends Migration
     {
         Schema::create('article_translations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('article_id');
+            $table->string('locale');
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->text('content')->nullable();
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
         });
     }
 

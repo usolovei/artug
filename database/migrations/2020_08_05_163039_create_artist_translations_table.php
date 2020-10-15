@@ -15,7 +15,11 @@ class CreateArtistTranslationsTable extends Migration
     {
         Schema::create('artist_translations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('name');
+            $table->text('about');
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
         });
     }
 
