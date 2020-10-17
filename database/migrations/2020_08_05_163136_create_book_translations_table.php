@@ -15,7 +15,14 @@ class CreateBookTranslationsTable extends Migration
     {
         Schema::create('book_translations', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->foreignId('book_id');
+            $table->string('locale');
+            $table->string('title');
+            $table->text('short_desc');
+            $table->text('description');
+            $table->string('meta_title')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->string('meta_keyword')->nullable();
         });
     }
 

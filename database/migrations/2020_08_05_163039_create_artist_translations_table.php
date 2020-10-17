@@ -15,6 +15,8 @@ class CreateArtistTranslationsTable extends Migration
     {
         Schema::create('artist_translations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('artist_id');
+            $table->string('locale');
             $table->string('name');
             $table->text('about');
             $table->string('meta_title')->nullable();
