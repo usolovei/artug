@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7151e4e1-e5f3-4dbf-8e40-b27bf8dead90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artug.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Artist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Blog/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Blog/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Exhibition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Inquiry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Log.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Painting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artug.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artug.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/BackendUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +31,8 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/Models/Slider.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -55,13 +58,24 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_162238_create_article_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_162834_create_sliders_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_27_204957_create_logs_table.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163110_create_article_translations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163056_create_painting_translations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163039_create_artist_translations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163125_create_exhibition_translations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163136_create_book_translations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_05_163233_create_article_category_translations_table.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Models/Artist.php" />
+        <option value="$PROJECT_DIR$/app/Models/Painting.php" />
+        <option value="$PROJECT_DIR$/app/Models/Blog/Post.php" />
+        <option value="$PROJECT_DIR$/app/Models/Blog/Category.php" />
+        <option value="$PROJECT_DIR$/app/Models/Exhibition.php" />
+        <option value="$PROJECT_DIR$/app/Models/Inquiry.php" />
+        <option value="$PROJECT_DIR$/app/BackendUser.php" />
+        <option value="$PROJECT_DIR$/app/Models/Publication.php" />
+        <option value="$PROJECT_DIR$/app/Models/Book.php" />
+        <option value="$PROJECT_DIR$/app/Models/Log.php" />
       </list>
     </option>
   </component>
@@ -165,6 +179,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/astrotomic/laravel-translatable" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -188,7 +203,13 @@
             <path>
               <item name="artug" type="b2602c69:ProjectViewProjectNode" />
               <item name="artug" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="artug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="artug" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,7 +221,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -208,6 +229,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
@@ -249,17 +271,19 @@
       <workItem from="1601886199187" duration="8000" />
       <workItem from="1602790987484" duration="1370000" />
       <workItem from="1602960636680" duration="1016000" />
+      <workItem from="1602961681972" duration="148000" />
+      <workItem from="1603387303859" duration="596000" />
+      <workItem from="1603641905328" duration="2792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11493000" />
+    <option name="totallyTimeSpent" value="15029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3941345" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29256082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -510,6 +534,84 @@
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BackendUser.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Blog/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="e#37#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Painting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Blog/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Exhibition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/BackendUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <element signature="e#23#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Inquiry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Slider.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
