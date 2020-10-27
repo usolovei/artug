@@ -18,11 +18,11 @@ class CreateExhibitionTranslationsTable extends Migration
             $table->foreignId('exhibition_id');
             $table->string('locale');
             $table->string('title');
-            $table->text('short_desc');
-            $table->text('description');
+            $table->text('short_desc')->nullable();
+            $table->text('description')->nullable();
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
-            $table->string('meta_keyword')->nullable();
+            $table->text('meta_keyword')->nullable();
         });
     }
 

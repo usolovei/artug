@@ -17,8 +17,8 @@ class CreateArticleCategoryTranslationsTable extends Migration
             $table->id();
             $table->foreignId('article_category_id');
             $table->string('locale');
-            $table->string('title');
-            $table->text('description');
+            $table->string('title')->nullable();
+            $table->text('description')->nullable();
         });
     }
 

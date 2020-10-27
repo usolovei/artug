@@ -13,12 +13,13 @@ class CreateArtistsTable extends Migration
      */
     public function up()
     {
-        Schema::create('artists', function (Blueprint $table) {
+        Schema::create('artists_new', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
             $table->boolean('is_featured')->default(false);
-            $table->string('banner_url');
-            $table->string('genre');
+            $table->string('banner_url')->nullable();
+            $table->string('genre')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateArtistsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('artists');
+        Schema::dropIfExists('artists_new');
     }
 }

@@ -4,11 +4,14 @@
 namespace App\Models;
 
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Artist
+class Artist extends Model
 {
     use Translatable, SoftDeletes;
+
+    protected $table = 'artists_new';
 
     public $translatedAttributes = [
         'name', 'about', 'meta_title', 'meta_description', 'meta_keyword'
@@ -20,6 +23,7 @@ class Artist
         'slug',
         'is_featured',
         'genre',
+        'banner_url'
     ];
 
     protected $image_settings = [];

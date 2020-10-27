@@ -4,9 +4,10 @@
 namespace App\Models\Blog;
 
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Article
+class Article extends Model
 {
     use Translatable, SoftDeletes;
 

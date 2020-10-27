@@ -15,10 +15,11 @@ class CreateSlidersTable extends Migration
     {
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
-            $table->string('photo_url');
-            $table->boolean('is_featured');
-            $table->tinyInteger('sort_order');
-            $table->string('link');
+            $table->string('photo_url')->nullable();
+            $table->boolean('is_featured')->default(false);
+            $table->tinyInteger('sort_order')->default(10);
+            $table->string('link')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

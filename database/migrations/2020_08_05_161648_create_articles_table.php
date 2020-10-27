@@ -16,8 +16,9 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('slug');
-            $table->string('image_url');
+            $table->string('image_url')->nullable();
             $table->boolean('is_visible')->default(true);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

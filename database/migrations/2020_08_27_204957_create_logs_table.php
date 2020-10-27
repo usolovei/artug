@@ -17,6 +17,7 @@ class CreateLogsTable extends Migration
             $table->id();
             $table->string('type');
             $table->text('message');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

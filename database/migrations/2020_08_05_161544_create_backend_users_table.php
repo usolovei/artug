@@ -18,10 +18,11 @@ class CreateBackendUsersTable extends Migration
             $table->string('name');
             $table->string('login');
             $table->string('password');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('phone_number')->nullable();
             $table->integer('rights');
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

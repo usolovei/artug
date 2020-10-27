@@ -5,9 +5,10 @@ namespace App\Models\Blog;
 
 
 use Astrotomic\Translatable\Translatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Category
+class Category extends Model
 {
     protected $table = 'article_categories';
 

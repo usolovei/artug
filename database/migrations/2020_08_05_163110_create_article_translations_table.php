@@ -22,7 +22,7 @@ class CreateArticleTranslationsTable extends Migration
             $table->text('content')->nullable();
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
-            $table->string('meta_keyword')->nullable();
+            $table->text('meta_keyword')->nullable();
         });
     }
 

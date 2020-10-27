@@ -17,11 +17,11 @@ class CreateArtistTranslationsTable extends Migration
             $table->id();
             $table->foreignId('artist_id');
             $table->string('locale');
-            $table->string('name');
-            $table->text('about');
+            $table->string('name')->nullable();
+            $table->text('about')->nullable();
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
-            $table->string('meta_keyword')->nullable();
+            $table->text('meta_keyword')->nullable();
         });
     }
 

@@ -18,6 +18,7 @@ class CreateExhibitionsTable extends Migration
             $table->string('slug');
             $table->string('video_url')->nullable();
             $table->string('image_url')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
